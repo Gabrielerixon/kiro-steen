@@ -21,7 +21,7 @@ export default function MapClient({ center, mapCenter, zoom, popupContent }: Map
         const L = await import('leaflet');
         await import('leaflet/dist/leaflet.css');
 
-        // @ts-ignore
+        // @ts-expect-error - Leaflet typings är inte helt korrekta här
         delete L.Icon.Default.prototype._getIconUrl;
         L.Icon.Default.mergeOptions({
           iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon-2x.png',

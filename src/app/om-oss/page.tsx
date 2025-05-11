@@ -124,7 +124,7 @@ export const metadata = {
                         <strong>Andra steget:</strong> Andra steget är mer inriktat mot kiropraktiken. Det bygger vidare på grundutbildningen med t ex patologi och farmakologi, nivåanpassad till framtida behov - det är ju inte avgörande för en kiropraktor att kunna identifiera en basalcellstumör i mikroskop. Under detta steg läggs också allt mera vikt på de kiropraktiska delarna, både teoretiskt och praktiskt. Andra områden som fördjupas är t ex radiologi och radiografi, vilket kiropraktorn har mer behov av än läkaren. I slutet av detta steg ingår i Danmark att praktisera som kiropraktor (med handledare) på privat klinik samt även på en särskild tvärfacklig ryggavdelning på sjukhus.
                       </li>
                       <li>
-                        <strong>Tredje steget:</strong> Det sista, tredje steget, är efter avslutad examen, då man under ett praktikår arbetar som anställd kiropraktor, självständigt men med möjlighet att få hjälp och vägledning. Först efter detta år blir man legitimerad och kan arbeta fullt ut "på egen hand".
+                        <strong>Tredje steget:</strong> Det sista, tredje steget, är efter avslutad examen, då man under ett praktikår arbetar som anställd kiropraktor, självständigt men med möjlighet att få hjälp och vägledning. Först efter detta år blir man legitimerad och kan arbeta fullt ut {`"på egen hand"`}.
                       </li>
                     </ol>
                     

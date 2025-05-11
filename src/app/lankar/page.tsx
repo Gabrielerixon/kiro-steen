@@ -70,7 +70,7 @@ export default function Lankar() {
                   
                   <div className="prose max-w-none mb-6">
                     <p>
-                      "Straighten Up" är ett rörelseprogram som genomförs i flera olika länder. Straighten Up Sweden är ett initiativ från Legitimerade Kiropraktorers Riksorganisation (LKR) att på ett enkelt sätt förbättra rygghälsan och öka livskvaliteten för allmänheten i Sverige.
+                      {`"Straighten Up" är ett rörelseprogram som genomförs i flera olika länder. Straighten Up Sweden är ett initiativ från Legitimerade Kiropraktorers Riksorganisation (LKR) att på ett enkelt sätt förbättra rygghälsan och öka livskvaliteten för allmänheten i Sverige.`}
                     </p>
                     <p>
                       Programmet innehåller övningar som görs under ett par tre minuter och är roliga, enkla att göra, och hälsosamma. Det är framtaget för att människor i alla åldrar ska kunna förbättra sin hållning och rygghälsa.
