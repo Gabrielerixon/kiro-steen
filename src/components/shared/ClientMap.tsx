@@ -20,9 +20,7 @@ const MapWithNoSSR = dynamic(
 );
 
 export default function ClientMap() {
-  const pinPosition = [57.7825, 14.1705]; // Korrekt position för pin
-  // Justera kartvyn för att ge plats åt popupen, flytta kartans mittpunkt något söder om pinen
-  const adjustedMapCenter = [57.7810, 14.1705]; // Justerad Y-koordinat för kartans centrum
+  
 
   return (
     <MapWithNoSSR
