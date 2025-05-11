@@ -1,103 +1,87 @@
-import Image from "next/image";
+import Link from 'next/link';
+import BookingButton from '@/components/shared/BookingButton';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* Hero section */}
+      <section className="bg-teal-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-4xl font-bold mb-6">Välkommen till Kiropraktorerna i Jönköping!</h1>
+              <p className="text-xl mb-8">
+                Vi erbjuder professionell kiropraktisk behandling i centrala Jönköping. Våra legitimerade kiropraktorer har lång erfarenhet inom området.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <BookingButton large />
+                <Link
+                  href="/behandlingar-kunskap"
+                  className="inline-block bg-teal-700 text-white font-medium py-4 px-8 rounded-md hover:bg-teal-800 transition-colors text-lg text-center"
+                >
+                  Läs mer om behandlingar
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-64 lg:h-96 rounded-lg overflow-hidden shadow-xl">
+              {/* Här kan du lägga till en bild på kliniken senare */}
+              <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
+                <span className="text-gray-600">Bild på klinik</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Introduction section */}
+      <section className="py-12 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Vad är kiropraktik?</h2>
+            <p className="text-xl text-gray-700">
+              Kiropraktik kommer av de grekiska orden chiros och praktikos, som betyder utövande med händerna. Behandlingen utförs alltså primärt med händerna.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Erfarna kiropraktorer</h3>
+              <p className="text-gray-700">
+                Vår kiropraktorklinik i centrala Jönköping etablerades 1979. Våra kiropraktorer är legitimerade av Socialstyrelsen och har en internationellt godkänd utbildning.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Modern behandling</h3>
+              <p className="text-gray-700">
+                Behandlingens syfte är att återskapa normal funktion och tillstånd i området. Återskapa rörligheten i lederna, få musklerna att varva ner och att få inflammationen att läka ut.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Centralt läge</h3>
+              <p className="text-gray-700">
+                Mottagningen ligger väldig centralt på gågatan Östra Storgatan i Jönköping, nära parkeringsmöjligheter, bussknutpunkter och stationen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to action */}
+      <section className="py-12 lg:py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-teal-700 rounded-xl shadow-xl overflow-hidden">
+            <div className="px-6 py-12 sm:p-12 text-center text-white">
+              <h2 className="text-3xl font-bold mb-6">Har du ryggproblem eller andra besvär?</h2>
+              <p className="text-xl mb-8 max-w-3xl mx-auto">
+                Kontakta oss idag för att boka en tid. Vi hjälper dig att återfå rörligheten och minska smärtan.
+              </p>
+              <BookingButton large text="Kontakta oss nu" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
