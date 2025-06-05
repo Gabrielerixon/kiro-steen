@@ -1,4 +1,3 @@
-// app/om-oss/page.tsx
 export const metadata = {
   title: 'Om Oss | Kiropraktorerna i Jönköping',
   description: 'Information om kiropraktorn på vår klinik i Jönköping, vår historia och utbildning.',
@@ -72,11 +71,57 @@ export default function OmOss() {
               <h3 className="text-xl font-bold text-blue-900 mb-3">Tidigare kollegor</h3>
               <div className="prose max-w-none text-blue-800">
                 <p>
-                  <strong>Thomas Wren:</strong> Efter 42 års praktik har Thomas nu gått i pension. 
+                  <strong>Thomas Wren:</strong> Efter 42 års praktik har Thomas nu gått i pension. Han kommer att vara semesteravlösare och att avlasta vid behov, men kommer inte att jobba fast.
                 </p>
                 <p>
                   <strong>Brian Bungum:</strong> Brian var under en period också här, men har numera flyttat till andra lokaler på Rosenlundsbadet. Han nås på telefon 07 07 33 88 37.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Om kiropraktik */}
+          <section className="mb-16">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="p-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Om kiropraktik</h2>
+                
+                <div className="prose max-w-none">
+                  <p>
+                    Kiropraktik kommer av de grekiska orden chiros och praktikos, som betyder utövande med händerna. Behandlingen utförs alltså primärt med händerna.
+                  </p>
+                  
+                  <p>
+                    Kiropraktik är inte någon ny behandlingsmetod. Den har existerat i olika former, kanske lika länge som det har funnits folk som har försökt att bota olika sjukdomar. T ex har den grekiska Hippocrates bland annat hållit på med någonting liknande kiropraktik. Genom århundradena har många mer eller mindre utbildade behandlare hållit på med mer eller mindre liknande typer av behandling - i folkmun kallat &ldquo;kotknackare&rdquo;.
+                  </p>
+                  
+                  <p>
+                    Den &ldquo;moderna&rdquo; kiropraktiken tillkom i sluten av 1800-talet av amerikanen B. J. Palmer, när han startade den första skolan för det han kallade kiropraktorer. Sen dess har kiropraktiken förändrat sig mycket, men själva behandlingssättet har inte förändrats lika mycket.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Straighten Up Sweden */}
+          <section className="mb-16">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="p-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Straighten Up Sweden</h2>
+                
+                <div className="prose max-w-none">
+                  <p>
+                    &ldquo;Straighten Up&rdquo; är ett rörelseprogram som genomförs i flera olika länder. Straighten Up Sweden är ett initiativ från Legitimerade Kiropraktorers Riksorganisation (LKR) att på ett enkelt sätt förbättra rygghälsan och öka livskvaliteten för allmänheten i Sverige.
+                  </p>
+                  
+                  <p>
+                    Visionen som driver Straighten Up Sweden är enkel och syftar på att varje person tar ett par minuter per dag för att förbättra sin rygghälsa, precis som vi gör vad gäller vår tandhygien. Behovet av rygghälsofrämjande aktiviteter är stort och miljarder kronor spenderas varje år bara vad gäller ländryggssmärta. Trots det har det innan Straighten Up programmet inte funnits något kort och enkelt program med ryggövningar som är specifikt framtaget för allmänhetens rygghälsa.
+                  </p>
+                  
+                  <p>
+                    För att ta tag i detta problem samlades det 2004 en grupp av framstående ledare och experter för att lösa det. Resultatet blev ett gratis allmänhetsfrämjande program som kallas Straighten Up. Det är övningar som görs under ett par tre minuter och är roliga, enkla att göra, och hälsosamma övningar. Det är framtaget för att människor i alla åldrar och kön ska kunna röra sig för att förbättra sin hållning och rygghälsa. Världshälsoorganisationen stödjer programmet för det främjar hälsa bland barn och ungdomar.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -104,7 +149,7 @@ export default function OmOss() {
                       <strong>Andra steget:</strong> Andra steget är mer inriktat mot kiropraktiken. Det bygger vidare på grundutbildningen med t ex patologi och farmakologi, nivåanpassad till framtida behov - det är ju inte avgörande för en kiropraktor att kunna identifiera en basalcellstumör i mikroskop. Under detta steg läggs också allt mera vikt på de kiropraktiska delarna, både teoretiskt och praktiskt. Andra områden som fördjupas är t ex radiologi och radiografi, vilket kiropraktorn har mer behov av än läkaren. I slutet av detta steg ingår i Danmark att praktisera som kiropraktor (med handledare) på privat klinik samt även på en särskild tvärfacklig ryggavdelning på sjukhus.
                     </li>
                     <li>
-                      <strong>Tredje steget:</strong> Det sista, tredje steget, är efter avslutad examen, då man under ett praktikår arbetar som anställd kiropraktor, självständigt men med möjlighet att få hjälp och vägledning. Först efter detta år blir man legitimerad och kan arbeta fullt ut "på egen hand".
+                      <strong>Tredje steget:</strong> Det sista, tredje steget, är efter avslutad examen, då man under ett praktikår arbetar som anställd kiropraktor, självständigt men med möjlighet att få hjälp och vägledning. Först efter detta år blir man legitimerad och kan arbeta fullt ut &ldquo;på egen hand&rdquo;.
                     </li>
                   </ol>
                   
