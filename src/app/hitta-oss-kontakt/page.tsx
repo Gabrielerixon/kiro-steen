@@ -1,6 +1,8 @@
+// app/hitta-oss-kontakt/page.tsx
 import Link from 'next/link';
 import ClientMap from '@/components/shared/ClientMap';
 import ContactForm from '@/components/shared/ContactForm';
+import OpeningHours from '@/components/shared/OpeningHours';
 
 export const metadata = {
   title: 'Hitta Oss & Kontakt | Kiropraktorerna i Jönköping',
@@ -67,25 +69,8 @@ export default function HittaOssKontakt() {
               <div className="p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Öppettider</h2>
                 
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900">Steen</h3>
-                    <p className="mt-2 text-gray-600">
-                      <span className="font-medium">Måndag och tisdag:</span> 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor<br />
-                      <span className="font-medium">Onsdag:</span> 9.00 - 12.00<br />
-                      <span className="font-medium">Torsdag och fredag:</span> 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900">Övrig information</h3>
-                    <p className="mt-2 text-gray-600">
-                      Thomas har nu gått i pension.<br />
-                      Brian finns numera på Rosenlundsbadet, Elmiavägen 4.<br />
-                      Han nås på 07 07 33 88 37.
-                    </p>
-                  </div>
-                </div>
+                {/* Dynamic Opening Hours Component */}
+                <OpeningHours className="text-gray-600" />
               </div>
             </div>
           </div>

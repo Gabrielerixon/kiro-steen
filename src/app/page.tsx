@@ -1,5 +1,7 @@
+// app/page.tsx
 import Link from 'next/link';
 import BookingButton from '@/components/shared/BookingButton';
+import Noteboard from '@/components/shared/Noteboard';
 
 export default function Home() {
   return (
@@ -32,6 +34,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Noteboard - conditionally rendered with its own section */}
+      <Noteboard />
 
       {/* Introduction section */}
       <section className="py-12 lg:py-20">
@@ -77,7 +82,12 @@ export default function Home() {
               <p className="text-xl mb-8 max-w-3xl mx-auto">
                 Kontakta oss idag för att boka en tid. Vi hjälper dig att återfå rörligheten och minska smärtan.
               </p>
-              <BookingButton large text="Kontakta oss nu" />
+              <Link
+                href="/hitta-oss-kontakt"
+                className="inline-block bg-white text-teal-700 font-medium py-4 px-8 rounded-md hover:bg-gray-50 transition-colors text-lg"
+              >
+                Kontakta oss nu
+              </Link>
             </div>
           </div>
         </div>

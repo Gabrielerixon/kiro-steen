@@ -16,6 +16,59 @@ body {
   background: rgb(var(--background-rgb));
 }
 
+/* LEAFLET MAP FIXES */
+/* Fix 1: Ensure map container has proper sizing */
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* Fix 2: Custom popup styling that works with corrected positioning */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 8px;
+  max-width: 250px;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: white;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Fix 3: Ensure popup appears above other elements */
+.leaflet-popup-pane {
+  z-index: 1000 !important;
+}
+
+/* Fix 4: Mobile responsiveness for popups */
+@media (max-width: 768px) {
+  .custom-popup .leaflet-popup-content-wrapper {
+    max-width: calc(100vw - 60px) !important;
+    font-size: 13px;
+  }
+  
+  .custom-popup .leaflet-popup-content {
+    margin: 6px 10px;
+  }
+}
+
+/* Fix 5: Ensure map tiles load properly */
+.leaflet-tile {
+  pointer-events: auto;
+}
+
+/* EXISTING STYLES BELOW */
 /* Lägg till stöd för prosa styling */
 .prose h1, 
 .prose h2, 
@@ -37,8 +90,6 @@ body {
   color: rgb(var(--foreground-rgb));
   font-weight: 600;
 }
-
-
 
 .prose a:hover {
   text-decoration: underline;
