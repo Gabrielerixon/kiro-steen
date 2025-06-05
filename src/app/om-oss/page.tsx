@@ -72,7 +72,7 @@ export default function OmOss() {
               <h3 className="text-xl font-bold text-blue-900 mb-3">Tidigare kollegor</h3>
               <div className="prose max-w-none text-blue-800">
                 <p>
-                  <strong>Thomas Wren:</strong> Efter 42 års praktik har Thomas nu gått i pension.
+                  <strong>Thomas Wren:</strong> Efter 42 års praktik har Thomas nu gått i pension. 
                 </p>
                 <p>
                   <strong>Brian Bungum:</strong> Brian var under en period också här, men har numera flyttat till andra lokaler på Rosenlundsbadet. Han nås på telefon 07 07 33 88 37.
