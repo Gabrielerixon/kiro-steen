@@ -1,5 +1,6 @@
 // app/page.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 import BookingButton from '@/components/shared/BookingButton';
 import Noteboard from '@/components/shared/Noteboard';
 
@@ -26,10 +27,13 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-64 lg:h-96 rounded-lg overflow-hidden shadow-xl">
-              {/* Här kan du lägga till en bild på kliniken senare */}
-              <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-600">Bild på klinik</span>
-              </div>
+              <Image
+                src="/images/clinic/entrance.png"
+                alt="Entré till Kiropraktorerna i Jönköping"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
