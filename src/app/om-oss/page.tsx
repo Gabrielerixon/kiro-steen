@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Om Oss | Kiropraktorerna i Jönköping',
   description: 'Information om kiropraktorn på vår klinik i Jönköping, vår historia och utbildning.',
@@ -39,9 +41,13 @@ export default function OmOss() {
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row gap-8 items-start">
                   <div className="flex-shrink-0 mx-auto lg:mx-0">
-                    {/* Placeholder för bild */}
-                    <div className="w-40 h-40 bg-gray-300 rounded-full flex items-center justify-center">
-                      <span className="text-gray-600">Steen</span>
+                    <div className="w-40 h-40 rounded-full overflow-hidden relative">
+                      <Image
+                        src="/images/team/steen.jpeg"
+                        alt="Steen Feldinger, legitimerad kiropraktor"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                   </div>
                   
