@@ -5,6 +5,7 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,25 +27,50 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
     
-    // Simulera API-anrop med en timeout
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form data:', formData);
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Något gick fel');
+      }
+
+      // Success!
+      setIsSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+        consent: false
+      });
+    } catch (err) {
+      console.error('Form submission error:', err);
+      setError(err instanceof Error ? err.message : 'Kunde inte skicka meddelandet. Försök igen eller ring oss direkt.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
     return (
       <div className="bg-green-50 p-6 rounded-lg">
         <h3 className="text-lg font-semibold text-green-800 mb-2">Tack för ditt meddelande!</h3>
-        <p className="text-green-700">
+        <p className="text-green-700 mb-4">
           Vi har tagit emot ditt meddelande och återkommer så snart som möjligt.
         </p>
         <button
           type="button"
-          className="mt-4 text-sm text-green-700 underline"
+          className="text-sm text-green-700 underline hover:text-green-800"
           onClick={() => setIsSubmitted(false)}
         >
           Skicka ett nytt meddelande
@@ -55,6 +81,13 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+          <p className="font-medium">Något gick fel</p>
+          <p className="text-sm">{error}</p>
+        </div>
+      )}
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Namn <span className="text-red-500">*</span>
