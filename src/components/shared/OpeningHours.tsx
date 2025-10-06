@@ -20,30 +20,20 @@ export default function OpeningHours({ showTitle = true, className = '' }: Openi
       if (doc.exists()) {
         setContent(doc.data().content || '');
       } else {
-        // Fallback to default opening hours if no content in Firebase
-        setContent(`Steen:
-Måndag och tisdag: 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor
-Onsdag: 9.00 - 12.00
-Torsdag och fredag: 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor
+        // Fallback to NEW default opening hours if no content in Firebase
+        setContent(`Måndag - Fredag: 9:00 - 17:00
 
 Övrig information:
-Thomas har nu gått i pension.
-Brian finns numera på Rosenlundsbadet, Elmiavägen 4.
-Han nås på 07 07 33 88 37.`);
+För akuta frågor, vänligen ring oss på 036 - 16 59 90.`);
       }
       setLoading(false);
     }, (error) => {
       console.error('Error fetching opening hours:', error);
-      // Fallback to default content
-      setContent(`Steen:
-Måndag och tisdag: 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor
-Onsdag: 9.00 - 12.00
-Torsdag och fredag: 9.00 - 16.00 på ojämna veckor och 9.00 - 18.00 på jämna veckor
+      // Fallback to NEW default content
+      setContent(`Måndag - Fredag: 9:00 - 17:00
 
 Övrig information:
-Thomas har nu gått i pension.
-Brian finns numera på Rosenlundsbadet, Elmiavägen 4.
-Han nås på 07 07 33 88 37.`);
+För akuta frågor, vänligen ring oss på 036 - 16 59 90.`);
       setLoading(false);
     });
 

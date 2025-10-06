@@ -107,7 +107,7 @@ export default function BehandlingarKunskap() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mt-6">
                   <Link
-                    href="https://www.kiro-jkpg.se/includes/SUSvuxna.pdf"
+                    href="/documents/SUSvuxna.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-teal-600 text-white font-medium py-3 px-6 rounded-md hover:bg-teal-700 hover:text-white transition-colors text-center"
@@ -115,7 +115,7 @@ export default function BehandlingarKunskap() {
                     Ladda ner för vuxna
                   </Link>
                   <Link
-                    href="https://www.kiro-jkpg.se/includes/SUSyngre.pdf"
+                    href="/documents/SUSyngre.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-teal-600 text-white font-medium py-3 px-6 rounded-md hover:bg-teal-700 hover:text-white transition-colors text-center"

@@ -84,7 +84,7 @@ export default function Lankar() {
                         Rörelseprogram speciellt anpassat för vuxna.
                       </p>
                       <Link
-                        href="https://www.kiro-jkpg.se/includes/SUSvuxna.pdf"
+                        href="/documents/SUSvuxna.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-teal-600 text-white font-medium py-2 px-4 rounded-md hover:bg-teal-700 transition-colors text-center"
@@ -99,7 +99,7 @@ export default function Lankar() {
                         Rörelseprogram anpassat för barn och ungdomar.
                       </p>
                       <Link
-                        href="https://www.kiro-jkpg.se/includes/SUSyngre.pdf"
+                        href="/documents/SUSyngre.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-teal-600 text-white font-medium py-2 px-4 rounded-md hover:bg-teal-700 transition-colors text-center"

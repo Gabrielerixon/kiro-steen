@@ -3,13 +3,27 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import CookieConsent from '@/components/shared/CookieConsent';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Kiropraktorerna i Jönköping',
-  description: 'Professionell kiropraktisk behandling i centrala Jönköping. Legitimerade kiropraktorer med lång erfarenhet.',
-  keywords: 'kiropraktor, jönköping, ryggbesvär, nackbesvär, behandling, legitimerad',
+  description: 'Legitimerade kiropraktorer i centrala Jönköping. Vi hjälper dig med rygg- och nackbesvär samt andra muskel- och ledproblem. Professionell kiropraktisk behandling sedan 1979.',
+  keywords: 'kiropraktor, Jönköping, ryggbehandling, nackbesvär, kiropraktik, legitimerad kiropraktor, ryggvärk, nackont, led- och muskelbesvär, manuell terapi, triggerpunktsterapi',
+  authors: [{ name: 'Kiropraktorerna i Jönköping' }],
+  openGraph: {
+    title: 'Kiropraktorerna i Jönköping - Legitimerad Kiropraktisk Behandling',
+    description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Professionell behandling av rygg-, nacke- och ledbesvär.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://www.kiro-jkpg.se',
+    siteName: 'Kiropraktorerna i Jönköping',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -28,8 +42,10 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'MedicalBusiness',
               'name': 'Kiropraktorerna i Jönköping',
+              'description': 'Legitimerade kiropraktorer i centrala Jönköping. Professionell behandling av rygg-, nacke- och ledbesvär sedan 1979.',
               'url': 'https://www.kiro-jkpg.se',
               'telephone': '+4636165990',
+              'email': 'steen@kiro-jkpg.se',
               'address': {
                 '@type': 'PostalAddress',
                 'streetAddress': 'Östra Storgatan 8',
@@ -45,23 +61,15 @@ export default function RootLayout({
               'openingHoursSpecification': [
                 {
                   '@type': 'OpeningHoursSpecification',
-                  'dayOfWeek': ['Monday', 'Tuesday'],
+                  'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                   'opens': '09:00',
-                  'closes': '18:00'
-                },
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  'dayOfWeek': 'Wednesday',
-                  'opens': '09:00',
-                  'closes': '12:00'
-                },
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  'dayOfWeek': ['Thursday', 'Friday'],
-                  'opens': '09:00',
-                  'closes': '18:00'
+                  'closes': '17:00'
                 }
-              ]
+              ],
+              'priceRange': '$$',
+              'foundingDate': '1979',
+              'paymentAccepted': 'Cash, Card, Swish',
+              'currenciesAccepted': 'SEK'
             })
           }}
         />
@@ -77,6 +85,7 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content" className="flex-grow">{children}</main>
           <Footer />
+          <CookieConsent />
         </div>
       </body>
     </html>

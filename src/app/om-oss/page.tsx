@@ -86,52 +86,6 @@ export default function OmOss() {
             </div>
           </section>
 
-          {/* Om kiropraktik */}
-          <section className="mb-16">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Om kiropraktik</h2>
-                
-                <div className="prose max-w-none">
-                  <p>
-                    Kiropraktik kommer av de grekiska orden chiros och praktikos, som betyder utövande med händerna. Behandlingen utförs alltså primärt med händerna.
-                  </p>
-                  
-                  <p>
-                    Kiropraktik är inte någon ny behandlingsmetod. Den har existerat i olika former, kanske lika länge som det har funnits folk som har försökt att bota olika sjukdomar. T ex har den grekiska Hippocrates bland annat hållit på med någonting liknande kiropraktik. Genom århundradena har många mer eller mindre utbildade behandlare hållit på med mer eller mindre liknande typer av behandling - i folkmun kallat &ldquo;kotknackare&rdquo;.
-                  </p>
-                  
-                  <p>
-                    Den &ldquo;moderna&rdquo; kiropraktiken tillkom i sluten av 1800-talet av amerikanen B. J. Palmer, när han startade den första skolan för det han kallade kiropraktorer. Sen dess har kiropraktiken förändrat sig mycket, men själva behandlingssättet har inte förändrats lika mycket.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Straighten Up Sweden */}
-          <section className="mb-16">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Straighten Up Sweden</h2>
-                
-                <div className="prose max-w-none">
-                  <p>
-                    &ldquo;Straighten Up&rdquo; är ett rörelseprogram som genomförs i flera olika länder. Straighten Up Sweden är ett initiativ från Legitimerade Kiropraktorers Riksorganisation (LKR) att på ett enkelt sätt förbättra rygghälsan och öka livskvaliteten för allmänheten i Sverige.
-                  </p>
-                  
-                  <p>
-                    Visionen som driver Straighten Up Sweden är enkel och syftar på att varje person tar ett par minuter per dag för att förbättra sin rygghälsa, precis som vi gör vad gäller vår tandhygien. Behovet av rygghälsofrämjande aktiviteter är stort och miljarder kronor spenderas varje år bara vad gäller ländryggssmärta. Trots det har det innan Straighten Up programmet inte funnits något kort och enkelt program med ryggövningar som är specifikt framtaget för allmänhetens rygghälsa.
-                  </p>
-                  
-                  <p>
-                    För att ta tag i detta problem samlades det 2004 en grupp av framstående ledare och experter för att lösa det. Resultatet blev ett gratis allmänhetsfrämjande program som kallas Straighten Up. Det är övningar som görs under ett par tre minuter och är roliga, enkla att göra, och hälsosamma övningar. Det är framtaget för att människor i alla åldrar och kön ska kunna röra sig för att förbättra sin hållning och rygghälsa. Världshälsoorganisationen stödjer programmet för det främjar hälsa bland barn och ungdomar.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Utbildningen */}
           <section>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
