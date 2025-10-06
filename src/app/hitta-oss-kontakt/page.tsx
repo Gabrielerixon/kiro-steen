@@ -6,7 +6,10 @@ import OpeningHours from '@/components/shared/OpeningHours';
 
 export const metadata = {
   title: 'Hitta Oss & Kontakt | Kiropraktorerna i Jönköping',
-  description: 'Kontaktuppgifter och information om hur du hittar till Kiropraktorerna i Jönköping, centralt beläget på Östra Storgatan.',
+  description: 'Kontaktuppgifter och information om hur du hittar till Kiropraktorerna i Jönköping, centralt beläget på Östra Storgatan 8. Telefon: 036-16 59 90',
+  alternates: {
+    canonical: 'https://www.kiro-jkpg.se/hitta-oss-kontakt',
+  },
 };
 
 export default function HittaOssKontakt() {

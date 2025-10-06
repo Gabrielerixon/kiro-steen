@@ -2,7 +2,10 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Länkar | Kiropraktorerna i Jönköping',
-  description: 'Användbara länkar för mer information om kiropraktik och relaterade organisationer.',
+  description: 'Användbara länkar för mer information om kiropraktik och relaterade organisationer. Ladda ner Straighten Up Sweden övningar.',
+  alternates: {
+    canonical: 'https://www.kiro-jkpg.se/lankar',
+  },
 };
 
 export default function Lankar() {

@@ -1,8 +1,26 @@
-// app/page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 import BookingButton from '@/components/shared/BookingButton';
 import Noteboard from '@/components/shared/Noteboard';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Kiropraktorerna i Jönköping - Legitimerad Kiropraktisk Behandling',
+  description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Vi hjälper dig med rygg- och nackbesvär samt andra muskel- och ledproblem. Boka tid idag!',
+  keywords: 'kiropraktor Jönköping, ryggbehandling, nackbesvär, kiropraktik, legitimerad kiropraktor, ryggvärk, led- och muskelbesvär',
+  alternates: {
+    canonical: 'https://www.kiro-jkpg.se',
+  },
+  openGraph: {
+    title: 'Kiropraktorerna i Jönköping - Legitimerad Kiropraktisk Behandling',
+    description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Professionell behandling av rygg-, nacke- och ledbesvär.',
+    url: 'https://www.kiro-jkpg.se',
+    siteName: 'Kiropraktorerna i Jönköping',
+    images: ['/images/clinic/entrance.png'],
+    locale: 'sv_SE',
+    type: 'website',
+  },
+};
 
 export default function Home() {
   return (

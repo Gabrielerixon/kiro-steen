@@ -1,7 +1,10 @@
 export const metadata = {
-    title: 'Priser | Kiropraktorerna i Jönköping',
-    description: 'Information om priser för kiropraktorbehandlingar i Jönköping.',
-  };
+  title: 'Priser | Kiropraktorerna i Jönköping',
+  description: 'Information om priser för kiropraktisk behandling hos Kiropraktorerna i Jönköping. Transparenta priser och betalningsmetoder.',
+  alternates: {
+    canonical: 'https://www.kiro-jkpg.se/priser',
+  },
+};
   
   export default function Priser() {
     return (

@@ -1,8 +1,12 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Om Oss | Kiropraktorerna i Jönköping',
-  description: 'Information om kiropraktorn på vår klinik i Jönköping, vår historia och utbildning.',
+  description: 'Lär känna Steen Feldinger, legitimerad kiropraktor med internationell utbildning. Vår klinik i centrala Jönköping har funnits sedan 1979.',
+  alternates: {
+    canonical: 'https://www.kiro-jkpg.se/om-oss',
+  },
 };
 
 export default function OmOss() {
@@ -71,21 +75,6 @@ export default function OmOss() {
             </div>
           </section>
 
-          {/* Information om tidigare kollegor */}
-          <section className="mb-16">
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Tidigare kollegor</h3>
-              <div className="prose max-w-none text-blue-800">
-                <p>
-                  <strong>Thomas Wren:</strong> Efter 42 års praktik har Thomas nu gått i pension. Han kommer att vara semesteravlösare och att avlasta vid behov, men kommer inte att jobba fast.
-                </p>
-                <p>
-                  <strong>Brian Bungum:</strong> Brian var under en period också här, men har numera flyttat till andra lokaler på Rosenlundsbadet. Han nås på telefon 07 07 33 88 37.
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* Utbildningen */}
           <section>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -112,10 +101,6 @@ export default function OmOss() {
                       <strong>Tredje steget:</strong> Det sista, tredje steget, är efter avslutad examen, då man under ett praktikår arbetar som anställd kiropraktor, självständigt men med möjlighet att få hjälp och vägledning. Först efter detta år blir man legitimerad och kan arbeta fullt ut &ldquo;på egen hand&rdquo;.
                     </li>
                   </ol>
-                  
-                  <p>
-                    Men för att man har gått igenom utbildningen är man inte färdigutbildad. Det kommer hela tiden nyheter, ny forskning och nya rön dyker upp. Därför är det mycket viktigt att hela tiden följa med genom facktidningar, kurser och vidareutbildning.
-                  </p>
                 </div>
               </div>
             </div>
