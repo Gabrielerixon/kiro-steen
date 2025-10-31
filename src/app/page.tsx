@@ -6,9 +6,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Kiropraktorerna i Jönköping - Legitimerad Kiropraktisk Behandling',
-  description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Vi hjälper dig med rygg- och nackbesvär samt andra muskel- och ledproblem. Boka tid idag!',
-  keywords: 'kiropraktor Jönköping, ryggbehandling, nackbesvär, kiropraktik, legitimerad kiropraktor, ryggvärk, led- och muskelbesvär',
-  alternates: {
+  description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Har du ont i ryggen, ont i nacken, ryggskott eller ischias? Vi hjälper dig med rygg-, nacke- och ledbesvär. Boka tid idag - Östra Storgatan 8.',
+  keywords: 'kiropraktor Jönköping, ont i ryggen Jönköping, ont i nacken behandling, ryggbehandling, nackbesvär, ryggont, nackont, kiropraktik, legitimerad kiropraktor, ryggvärk, ryggskott, ischias, diskbråck behandling, led- och muskelbesvär, manuell terapi, kiropraktor östra storgatan, kiropraktor centrala jönköping, bästa kiropraktor jönköping',  alternates: {
     canonical: 'https://www.kiro-jkpg.se',
   },
   openGraph: {
@@ -47,7 +46,7 @@ export default function Home() {
             <div className="relative h-64 lg:h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/clinic/entrance.jpg"
-                alt="Entré till Kiropraktorerna i Jönköping"
+                alt="Kiropraktor i Jönköping - Välkommen till vår klinik på Östra Storgatan för behandling av rygg- och nackbesvär"
                 fill
                 className="object-cover"
                 priority

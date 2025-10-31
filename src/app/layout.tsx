@@ -69,7 +69,12 @@ export default function RootLayout({
               'priceRange': '$$',
               'foundingDate': '1979',
               'paymentAccepted': 'Cash, Card, Swish',
-              'currenciesAccepted': 'SEK'
+              'currenciesAccepted': 'SEK',
+              "areaServed": {
+                "@type": "City",
+                "name": "Jönköping"
+              },
+              "medicalSpecialty": "Chiropractic"
             })
           }}
         />
