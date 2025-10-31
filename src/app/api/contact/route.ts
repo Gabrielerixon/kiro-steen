@@ -18,7 +18,7 @@ export async function POST(request: Request) {
 
     // Skicka email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'Kontaktformulär <kontakt@kiro-jkpg.se>', // Du kommer byta till din egen domän senare
+      from: 'Kontaktformulär <kontakt@mail.kiro-jkpg.se>', // Du kommer byta till din egen domän senare
       to: ['steen@kiro-jkpg.se'], // Steens email
       replyTo: email, // Så Steen kan svara direkt till kunden
       subject: `Nytt meddelande från ${name}`,
