@@ -12,9 +12,9 @@ interface BookingButtonProps {
 export default function BookingButton({ large = false, className = '', text = 'Boka Tid' }: BookingButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
 
-  const baseClasses = "inline-block bg-teal-700 text-white font-medium rounded-md hover:bg-teal-800 transition-colors text-center";
-  const sizeClasses = large ? "py-4 px-8 text-lg" : "py-2 px-6 text-base";
-  const hoverEffect = isHovered ? "transform -translate-y-1 shadow-lg" : "";
+  const baseClasses = "inline-block bg-white text-teal-600 font-semibold rounded-md hover:bg-gray-200 transition-all duration-200 text-center shadow-md hover:shadow-lg";
+  const sizeClasses = large ? "py-4 px-8 text-lg" : "py-4 px-8 text-base";
+  const hoverEffect = isHovered ? "transform -translate-y-0.5" : "";
   
   return (
     <Link
