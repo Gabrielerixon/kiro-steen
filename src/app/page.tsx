@@ -36,7 +36,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <BookingButton large />
                 <Link
-                  href="/behandlingar"
+                  href="/behandlingar-kunskap"
                   className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-md hover:bg-white hover:text-teal-600 transition-all duration-200 text-lg"
                 >
                   Läs mer om behandlingar

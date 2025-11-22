@@ -60,7 +60,7 @@ export const metadata = {
                       </p>
                       <ul>
                         <li>Bankkort (Visa, Mastercard)</li>
-                        <li>Swish</li>
+                        
                         <li>Fakturabetalning</li>
                       </ul>
                       <p>
