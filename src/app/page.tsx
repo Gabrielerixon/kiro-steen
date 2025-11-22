@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Legitimerade kiropraktorer i centrala Jönköping sedan 1979. Professionell behandling av rygg-, nacke- och ledbesvär.',
     url: 'https://www.kiro-jkpg.se',
     siteName: 'Kiropraktorerna i Jönköping',
-    images: ['/images/clinic/entrance.jpg'],
+    images: ['/images/clinic/entrance.webp'],
     locale: 'sv_SE',
     type: 'website',
   },
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="relative h-64 lg:h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/clinic/entrance.jpg"
+                src="/images/clinic/entrance.webp"
                 alt="Kiropraktor i Jönköping - Välkommen till vår klinik på Östra Storgatan för behandling av rygg- och nackbesvär"
                 fill
                 className="object-cover"
